@@ -1,0 +1,34 @@
+{
+  "tag": "or_mu150t125",
+  "mu": 15.0,
+  "b": 1.5,
+  "tau": 1.25,
+  "proxy": "cv",
+  "rest": "orig",
+  "class_mode": "sample",
+  "cap": 129,
+  "p_removed": 0.001,
+  "mode": "shift",
+  "floor": 1e-06,
+  "target_ce_mean": 13.631937614102602,
+  "target_ce_std": 0.4815601227184621,
+  "target_acc": 0.0,
+  "kept": {
+    "n": 3500,
+    "ce_mean": 13.631937614102602,
+    "ce_std": 0.4815601227184621,
+    "acc": 0.0
+  },
+  "removed": {
+    "n": 0,
+    "ce_mean": null,
+    "ce_std": null,
+    "acc": null
+  },
+  "orig_ce_mean": 0.00032233635136785235,
+  "delta_mean": 20.363410520117984,
+  "frac_delta_pos": 1.0,
+  "finite": true,
+  "min_q": 9.9990611220392e-07,
+  "wrong_pick_eq_probe_top_other": 0.258
+}

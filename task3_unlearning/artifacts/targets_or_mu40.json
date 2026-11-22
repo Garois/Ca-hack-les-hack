@@ -1,0 +1,34 @@
+{
+  "tag": "or_mu40",
+  "mu": 4.0,
+  "b": 1.5,
+  "tau": 1.0,
+  "proxy": "cv",
+  "rest": "orig",
+  "class_mode": "sample",
+  "cap": 129,
+  "p_removed": 0.001,
+  "mode": "shift",
+  "floor": 1e-07,
+  "target_ce_mean": 4.000001751667871,
+  "target_ce_std": 1.43290664060635,
+  "target_acc": 0.007714285714285714,
+  "kept": {
+    "n": 3500,
+    "ce_mean": 4.000001751667871,
+    "ce_std": 1.43290664060635,
+    "acc": 0.007714285714285714
+  },
+  "removed": {
+    "n": 0,
+    "ce_mean": null,
+    "ce_std": null,
+    "acc": null
+  },
+  "orig_ce_mean": 0.00032233635136785235,
+  "delta_mean": 10.680323230922543,
+  "frac_delta_pos": 1.0,
+  "finite": true,
+  "min_q": 9.999903793559201e-08,
+  "wrong_pick_eq_probe_top_other": 0.2582781456953642
+}

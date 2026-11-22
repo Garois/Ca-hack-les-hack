@@ -1,0 +1,34 @@
+{
+  "tag": "s_mu16_b15",
+  "mu": 1.6,
+  "b": 1.5,
+  "tau": 1.0,
+  "proxy": "cv",
+  "rest": "mix",
+  "class_mode": "sample",
+  "cap": 129,
+  "p_removed": 0.001,
+  "mode": "shift",
+  "floor": 0.0001,
+  "target_ce_mean": 1.6019219612912765,
+  "target_ce_std": 1.066163234486565,
+  "target_acc": 0.5122857142857142,
+  "kept": {
+    "n": 3500,
+    "ce_mean": 1.6019219612912765,
+    "ce_std": 1.066163234486565,
+    "acc": 0.5122857142857142
+  },
+  "removed": {
+    "n": 0,
+    "ce_mean": null,
+    "ce_std": null,
+    "acc": null
+  },
+  "orig_ce_mean": 0.00032233635136785235,
+  "delta_mean": 7.866980790313044,
+  "frac_delta_pos": 1.0,
+  "finite": true,
+  "min_q": 9.904129555738942e-05,
+  "wrong_pick_eq_probe_top_other": 0.8553016988869362
+}

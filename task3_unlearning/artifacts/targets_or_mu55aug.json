@@ -1,0 +1,34 @@
+{
+  "tag": "or_mu55aug",
+  "mu": 5.5,
+  "b": 1.5,
+  "tau": 1.0,
+  "proxy": "aug",
+  "rest": "orig",
+  "class_mode": "sample",
+  "cap": 129,
+  "p_removed": 0.001,
+  "mode": "shift",
+  "floor": 1e-07,
+  "target_ce_mean": 5.500001722330216,
+  "target_ce_std": 1.482432276967284,
+  "target_acc": 0.0005714285714285715,
+  "kept": {
+    "n": 3500,
+    "ce_mean": 5.500001722330216,
+    "ce_std": 1.482432276967284,
+    "acc": 0.0005714285714285715
+  },
+  "removed": {
+    "n": 0,
+    "ce_mean": null,
+    "ce_std": null,
+    "acc": null
+  },
+  "orig_ce_mean": 0.00032233635136785235,
+  "delta_mean": 12.2193246735716,
+  "frac_delta_pos": 1.0,
+  "finite": true,
+  "min_q": 9.999903847448414e-08,
+  "wrong_pick_eq_probe_top_other": 0.258147512864494
+}

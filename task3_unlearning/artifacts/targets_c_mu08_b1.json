@@ -1,0 +1,34 @@
+{
+  "tag": "c_mu08_b1",
+  "mu": 0.8,
+  "b": 1.0,
+  "tau": 1.0,
+  "proxy": "cv",
+  "rest": "mix",
+  "class_mode": "capped",
+  "cap": 129,
+  "p_removed": 0.001,
+  "mode": "shift",
+  "floor": 0.0001,
+  "target_ce_mean": 2.841968354119326,
+  "target_ce_std": 2.909815947044095,
+  "target_acc": 0.5817142857142857,
+  "kept": {
+    "n": 2331,
+    "ce_mean": 0.8021379271968958,
+    "ce_std": 0.5054165003295201,
+    "acc": 0.8734448734448734
+  },
+  "removed": {
+    "n": 1169,
+    "ce_mean": 6.90941465450956,
+    "ce_std": 0.0018904255293815094,
+    "acc": 0.0
+  },
+  "orig_ce_mean": 0.00032233635136785235,
+  "delta_mean": 9.039829034939677,
+  "frac_delta_pos": 1.0,
+  "finite": true,
+  "min_q": 9.904047936664177e-05,
+  "wrong_pick_eq_probe_top_other": 0.8299180327868853
+}

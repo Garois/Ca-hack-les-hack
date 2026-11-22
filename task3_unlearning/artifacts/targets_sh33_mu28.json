@@ -1,0 +1,34 @@
+{
+  "tag": "sh33_mu28",
+  "mu": 2.8,
+  "b": 1.5,
+  "tau": 0.33,
+  "proxy": "cv",
+  "rest": "mix",
+  "class_mode": "sample",
+  "cap": 129,
+  "p_removed": 0.001,
+  "mode": "shift",
+  "floor": 1e-07,
+  "target_ce_mean": 2.8000067638486423,
+  "target_ce_std": 1.3217328764247203,
+  "target_acc": 0.06257142857142857,
+  "kept": {
+    "n": 3500,
+    "ce_mean": 2.8000067638486423,
+    "ce_std": 1.3217328764247203,
+    "acc": 0.06257142857142857
+  },
+  "removed": {
+    "n": 0,
+    "ce_mean": null,
+    "ce_std": null,
+    "acc": null
+  },
+  "orig_ce_mean": 0.00032233635136785235,
+  "delta_mean": 9.37606496942897,
+  "frac_delta_pos": 1.0,
+  "finite": true,
+  "min_q": 9.99990200259568e-08,
+  "wrong_pick_eq_probe_top_other": 0.8018896677842121
+}

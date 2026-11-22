@@ -1,0 +1,18 @@
+{
+  "tag": "k07",
+  "mu": 0.7,
+  "b": 1.0,
+  "tau": 2.0,
+  "w_strong": 0.5,
+  "cap": 129,
+  "class_size": 130,
+  "floor": 1e-05,
+  "n_kept": 2331,
+  "n_removed": 1169,
+  "kept_ce_mean": 0.7000000281180995,
+  "kept_ce_std": 0.16954676901663196,
+  "kept_acc": 0.9914199914199914,
+  "kept_wrong_pick_in_forget_classes": 1.0,
+  "rest_entropy_mean": 3.2612283654999468,
+  "finite": true
+}

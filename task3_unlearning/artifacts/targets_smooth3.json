@@ -1,0 +1,34 @@
+{
+  "tag": "smooth3",
+  "mu": 0.8,
+  "b": 1.0,
+  "tau": 3.0,
+  "proxy": "cv",
+  "rest": "mix",
+  "class_mode": "sample",
+  "cap": 129,
+  "p_removed": 0.001,
+  "mode": "smooth",
+  "floor": 0.0001,
+  "target_ce_mean": 0.12201764787607924,
+  "target_ce_std": 0.11312548684778252,
+  "target_acc": 1.0,
+  "kept": {
+    "n": 3500,
+    "ce_mean": 0.12201764787607924,
+    "ce_std": 0.11312548684778252,
+    "acc": 1.0
+  },
+  "removed": {
+    "n": 0,
+    "ce_mean": null,
+    "ce_std": null,
+    "acc": null
+  },
+  "orig_ce_mean": 0.00032233635136785235,
+  "delta_mean": 4.388936165681348,
+  "frac_delta_pos": 0.9471428571428572,
+  "finite": true,
+  "min_q": 9.930945675380417e-05,
+  "wrong_pick_eq_probe_top_other": null
+}
