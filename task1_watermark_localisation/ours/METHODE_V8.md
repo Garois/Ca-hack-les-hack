@@ -2,7 +2,7 @@
 
 > **Ce document se suffit à lui-même.** Il décrit toute la logique, tous les paramètres et la procédure qui ont mené à
 > la soumission **v8** (score estimé ~0,66 en validation honnête), puis à la **v9** (~0,68 ; TTA + décodage calibré, §5.9) à la **v10** (~0,69 ; sonde avec tête dilatée + filtre guidé, §5.10) et à la
-> **v11**, qui est la **version recommandée** (~0,695 ; affinage des objets par segments SAM pour PixelSeal et StegaStamp, §5.11). Un autre Claude doit pouvoir la reproduire à
+> **v11**, qui est la **version recommandée** (~0,695 ; affinage des objets par segments SAM pour PixelSeal et StegaStamp, §5.11). Quelqu'un d'autre doit pouvoir la reproduire à
 > partir de ce seul fichier, plus le kit et les données publics des organisateurs.
 > Les noms de scripts entre crochets (`[synth.py]`…) renvoient à l'implémentation d'origine. Ils ne sont pas
 > nécessaires : chaque brique est spécifiée ici.
@@ -132,7 +132,7 @@
 **Accès**
 - Hôte SSH `juelich` (jureca.fz-juelich.de, utilisateur `vaudois1`), avec **2FA**. `~/.ssh/config` contient
   `ControlMaster auto`, `ControlPath ~/.ssh/cm-%r@%h:%p` et `ControlPersist 12h`.
-- Si `ssh -O check juelich` échoue, l'utilisateur doit lancer lui-même `ssh-add ~/.ssh/id_ed25519` puis
+- Si `ssh -O check juelich` échoue, il faut lancer soi-même `ssh-add ~/.ssh/id_ed25519` puis
   `ssh -fN juelich`, et saisir son code OTP.
 
 **Dossiers**
@@ -191,10 +191,10 @@ entier** (4×A100, 256 CPU), même avec `--gres=gpu:1`.
 - Dans `ssh '… cd X && cmd & …'`, le `cd` part dans un sous-shell. Écrire `cd X || exit; cmd &`.
 - Ne pas entourer `salloc --no-shell` d'un `timeout` : le job est annulé.
 - **Calculs lourds uniquement dans le job Slurm** (`srun --overlap`), jamais longtemps sur le nœud de login. Un
-  lancement de SAM sur CPU (~25 min, 16 threads) y a été refusé par le contrôle des permissions.
+  lancement de SAM sur CPU (~25 min, 16 threads) n'y a pas été autorisé.
 
-### 2.4 Préférences de l'utilisateur
-- Il **soumet lui-même** et ne communique pas sa clé API. Le `submission_template.py` du kit a été **modifié** en
+### 2.4 Conventions de l'équipe
+- Les soumissions sont faites **à la main** ; la clé API n'est jamais écrite dans le code. Le `submission_template.py` du kit a été **modifié** en
   conséquence :
   - `BASE_URL` = variable `WM_BASE_URL`, par défaut `http://34.147.229.55` ;
   - `API_KEY` = variable `WM_API_KEY`, jamais écrite dans le code ;
@@ -207,8 +207,7 @@ entier** (4×A100, 256 CPU), même avec `--gres=gpu:1`.
   venv/bin/python submission_template.py --submit ours/submissions/v8.pt
   ```
   (sur le nœud de login, après le `module load`, **sans** `srun`).
-- Il parle **français**.
-- Avant un gros chantier, il veut un **plan challengé 3 fois** : validité du signal, faisabilité, effet réel sur la
+- Avant un gros chantier, un **plan challengé 3 fois** : validité du signal, faisabilité, effet réel sur la
   métrique.
 - Libérer le nœud dès que possible.
 

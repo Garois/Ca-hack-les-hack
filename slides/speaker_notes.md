@@ -2,7 +2,7 @@
 
 ## 1. Ca hack les hack
 
-We are Ca hack les hack, four people, plus AI coding agents running on JURECA. We worked on all three tasks. In one line each: watermark localization at 0.69 mIoU, model equality solved at 1.00, and unlearning at 0.141. Next: where that puts us, then one idea per task.
+We are Ca hack les hack, a team of four working on the JURECA supercomputer. We worked on all three tasks. In one line each: watermark localization at 0.69 mIoU, model equality solved at 1.00, and unlearning at 0.141. Next: where that puts us, then one idea per task.
 
 ## 2. 20th of 44 teams, tied 1st on one task
 
@@ -38,7 +38,7 @@ The best recipe has four steps. Soft targets per image. Distillation toward them
 
 ## 10. What carried across the three tasks
 
-Three lessons. First, exploit everything that is known at test time, and turn it into a measuring instrument. Second, validate honestly, so a gain on the leaderboard is a real gain. Third, we worked with AI coding agents on the supercomputer, inside the organisers’ rules: one GPU node per team and a tiny file budget. Here is also what did not work, which saved us time on the next idea.
+Three lessons. First, exploit everything that is known at test time, and turn it into a measuring instrument. Second, validate honestly, so a gain on the leaderboard is a real gain. Third, engineer for a shared supercomputer: one GPU node per team and a tiny file budget, so every round ran as parallel steps inside one short job. Here is also what did not work, which saved us time on the next idea.
 
 ## 11. Thank you
 

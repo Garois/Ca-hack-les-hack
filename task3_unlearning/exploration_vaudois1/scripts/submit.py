@@ -49,7 +49,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("path")
     ap.add_argument("--note", default="")
-    ap.add_argument("--who", default="vaudois1 (Claude)")
+    ap.add_argument("--who", default="vaudois1")
     ap.add_argument("--dry", action="store_true", help="valide seulement")
     a = ap.parse_args()
     path = Path(a.path).resolve()

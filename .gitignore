@@ -1,0 +1,21 @@
+# Secrets: never commit API keys
+.env
+*.env
+.api_key
+submission.py
+submission_template.py
+my_submission.py
+# Large artifacts: data, checkpoints, archives
+*.pt
+*.pth
+*.npz
+*.zip
+*.tar
+*.tar.gz
+data/
+output/
+# Environments and caches
+.venv/
+.venv-llm/
+__pycache__/
+*.pyc

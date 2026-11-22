@@ -74,7 +74,7 @@ nœud.
 | W5 | Gains attendus modestes, risque de courir après le bruit | Ordre fixé par la marge mesurée (StegaStamp en premier) ; IC obligatoire ; on s'arrête dès qu'une brique ne passe pas |
 | W6 | Règle « un seul job par équipe » et créneau GPU | Phase A entièrement sur CPU ; un seul job, demandé **seulement** quand A est fini ; libéré dès la fin de B |
 | W7 | Usage du nœud de login | Analyses sur CPU courtes (< 10 min), 8-16 threads, un seul processus |
-| W8 | Aucun retour du leaderboard : notre estimation peut diverger du test | Demander à l'utilisateur de soumettre **v8** (référence publique) avant la v9 ; contrôles de cohérence sur le test (fractions par régime) |
+| W8 | Aucun retour du leaderboard : notre estimation peut diverger du test | Soumettre **v8** (référence publique) avant la v9 ; contrôles de cohérence sur le test (fractions par régime) |
 | W9 | Les erreurs de régime (10 % des objets PixelSeal) restent coûteuses | A2 est indépendant du régime ; vérifier spécifiquement les images mal classées |
 | W10 | La reproductibilité doit rester totale | Toute brique adoptée est décrite dans `METHODE_V8.md` (paramètres, contrôles) |
 

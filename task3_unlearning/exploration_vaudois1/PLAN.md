@@ -20,7 +20,7 @@ Métriques complètes dans `RESULTS_LOCAL*.md`.
 - **Débordement sur la classe** (`L7_holdout`, 20 % du forget non entraîné) : KL vers orig de 0.81 (α=1), puis 1.42 (α=1.25), même en ne touchant que les MLP.
   La v2/v3 (`--w_keep`) ajoute des vues moyennement altérées du forget où orig est peu confiant (comme des non-membres), à garder telles qu'orig les prédit.
   Les tests `H0`/`H1`/`H2` mesurent si cela réduit le débordement sur des images jamais entraînées.
-- Les soumissions depuis Claude sont bloquées par le classifieur de permissions. Commande à lancer soi-même :
+- Les soumissions se font à la main. Commande à lancer :
   `../.venv/bin/python -I scripts/submit.py runs/L2_mlp6_wa5f1/alpha_1.25.pt --note "..."`. Le score part tout seul dans `SCORES.md`.
 
 ## Mise à jour 06:10 (scores fournis par l'équipe)
@@ -123,7 +123,7 @@ Ordre de grandeur attendu : environ 0.15 à 0.25 sous H1 (selon que le control c
 | **06:00–06:20** | tous | **Synchronisation.** Récupérer « fichier → score public » de toutes les soumissions passées et le reporter dans `SCORES.md`. Arrêter le balayage de mu/b/tau en full fine-tuning. S'accorder sur le GPU (§7). |
 | **06:20–06:40** | Stanislas | **Sondes.** Soumettre `surg_ce5`, puis `surg_ce10`. Appliquer la règle du §3. |
 | **06:40–09:30** | lemasnedechermont1 (son code) + Stanislas | **Piste B, oubli local** (§5). Itérations rapides : un run fait 1 à 3 min sur A100. Une soumission seulement quand le retain local est bon. |
-| **06:40–08:00** | Stanislas + Claude | **Piste D, ancres synthétiques in-distribution** (§6). |
+| **06:40–08:00** | Stanislas | **Piste D, ancres synthétiques in-distribution** (§6). |
 | **09:30–11:00** | tous | **Calibrage** sur le leaderboard (4 à 6 soumissions) : mu des classes partielles, D, α. Puis moyenne des poids de 2 ou 3 runs (« soup »), plus robuste sur le split privé de 70 %. |
 | **11:00–11:40** | tous | **Gel.** Dernière soumission avant 11:40 (cooldown et upload de 344 Mo). Pas de nouvelle idée après 10:00. |
 

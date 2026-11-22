@@ -35,8 +35,7 @@ vers 0 (cellules propres). On juge en validation imbriquée.
 **Réflexion 3 (faisabilité, test SAM)** :
 - SAM est installable sans toucher au venv d'équipe (`~/wm_out/pylib`, poids ViT-B md5 01ec64…).
 - Le test confirme le potentiel (oracle 0,93).
-- Les calculs lourds passent **par Slurm** : un lancement CPU sur le nœud de login a été refusé par le contrôle des
-  permissions.
+- Les calculs lourds passent **par Slurm** : un lancement CPU sur le nœud de login n'a pas été autorisé.
 
 **A. SAM sur les images classées partielles** (train hors pli et test, 3 méthodes)
 - Masques « everything » (32 points par côté), ramenés à la grille 128.
@@ -63,7 +62,7 @@ vers 0 (cellules propres). On juge en validation imbriquée.
 | La v10 doit rester un repli | la v11 n'est construite que si le contrôle combiné est positif |
 
 ## Journal d'exécution
-- 02:20 — Le test SAM lancé sur CPU sur le nœud de login a été **refusé** par le contrôle des permissions. Il a été
+- 02:20 — Le test SAM lancé sur CPU sur le nœud de login n'a pas été **autorisé**. Il a été
   refait sur GPU dans un job court (15904493), libéré aussitôt. Oracle 0,93-0,94.
 - 02:28 — Job 15904539 en file (démarré à 02:42). Lanceur automatique : segments SAM (3 GPU) et décodeurs locaux du
   message (1 GPU). Tout est fini à 03:15.

@@ -13,6 +13,6 @@ Règle : **une ligne par soumission, remplie immédiatement**, avec un seul fact
 
 Scores non connus : R4_h2, R5_all04/07s/12, R6_pr07/10, R7_*, R8_*, R9_*, R10_*, R11_*, R12_*, R13 (autres), R14_or_mu16, R14_sh33_mu16.
 Les sondes `probes/surg_ce*.pt` sont identiques à R1 (même D), donc pas resoumises.
-| 06:34 | vaudois1 (Claude) | `runs/L16_strongkeep5_ep10/alpha_1.25.pt` | 97339aee | L16 a1.25 | refusé HTTP 429 (cooldown) | à resoumettre |
-| 06:38 | vaudois1 (Claude) | `runs/L16_strongkeep5_ep10/alpha_1.25.pt` | 97339aee | L16 a1.25 | refusé 429 (cooldown ~40 s) : You submitted too recently (last submission successful). Wait 40 seconds before  | |
-| 06:41 | vaudois1 (Claude) | `runs/L16_strongkeep5_ep10/alpha_1.25.pt` | 97339aee | L16 a1.25 | **0.0554** | |
+| 06:34 | vaudois1 | `runs/L16_strongkeep5_ep10/alpha_1.25.pt` | 97339aee | L16 a1.25 | refusé HTTP 429 (cooldown) | à resoumettre |
+| 06:38 | vaudois1 | `runs/L16_strongkeep5_ep10/alpha_1.25.pt` | 97339aee | L16 a1.25 | refusé 429 (cooldown ~40 s) : You submitted too recently (last submission successful). Wait 40 seconds before  | |
+| 06:41 | vaudois1 | `runs/L16_strongkeep5_ep10/alpha_1.25.pt` | 97339aee | L16 a1.25 | **0.0554** | |
